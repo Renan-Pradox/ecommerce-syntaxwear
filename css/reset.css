@@ -1,96 +1,101 @@
 /* Modern CSS Reset - inspirado por Andy Bell
-	 - Box-sizing consistente
-	 - Remoção de margens padrão
-	 - Ajustes para imagens, formulários e mídia
-	 - Suporte a prefers-reduced-motion
-	 - Foco acessível com :focus-visible
+   - Box-sizing consistente
+   - Remoção de margens padrão
+   - Ajustes para imagens, formulários e mídia
+   - Suporte a prefers-reduced-motion
+   - Foco acessível com :focus-visible
 */
 
 /* Box model mais previsível */
 *, *::before, *::after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* Remover margens/paddings padrões de elementos principais */
 :where(html, body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd, ul, ol, li, pre, fieldset, legend, textarea, input, button) {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Altura base e ajustes de renderização de texto */
 html, body {
-	height: 100%;
+  height: 100%;
 }
 body {
-	min-height: 100%;
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	text-rendering: optimizeLegibility;
+  min-height: 100%;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 /* Evita que imagens e mídias escapem do contêiner */
 img, picture, video, canvas, svg {
-	display: block;
-	max-width: 100%;
-	height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Inherit font for form elements */
 input, button, textarea, select {
-	font: inherit;
+  font: inherit;
 }
 
 /* Remover estilos de lista padrão */
 ul[role="list"], ol[role="list"], ul, ol {
-	list-style: none;
+  list-style: none;
 }
 
 /* Tabelas */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Links sem decoração por padrão (estilizar conforme necessidade) */
 a {
-	color: inherit;
-	text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+  
+}
+
+ul,ol {
+  list-style: none;
 }
 
 /* Botões e inputs: remover margem padrão */
 button, input, select, textarea {
-	margin: 0;
+  margin: 0;
 }
 
 /* Ajuste para usuários que preferem redução de movimento */
 @media (prefers-reduced-motion: reduce) {
-	* {
-		animation-duration: 0.001ms !important;
-		animation-iteration-count: 1 !important;
-		transition-duration: 0.001ms !important;
-		scroll-behavior: auto !important;
-	}
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* Foco acessível: esconder outline globalmente, usar :focus-visible para indicadores visuais */
 :where(:focus) {
-	outline: none;
+  outline: none;
 }
 
 :where(:focus-visible) {
-	outline: 3px solid Highlight;
-	outline-offset: 2px;
+  outline: 3px solid Highlight;
+  outline-offset: 2px;
 }
 
 /* Ajustes gerais */
 html {
-	-webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* Permitindo que elementos interativos usem cursor pointer quando apropriado */
 button, [role="button"] {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 /* Pequena proteção contra quebras de palavras longas */
