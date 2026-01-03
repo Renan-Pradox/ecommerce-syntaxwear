@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.255rem 1.25rem;
+  padding: 0.265rem 1.25rem;
   background-color: #ffffff;
 }
 
@@ -43,7 +43,7 @@
 }
 
 .nav-right img {
-  height: 24px;
+  height: 20px;
 }
 
 .nav-rigth a:hover img {

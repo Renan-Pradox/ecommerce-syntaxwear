@@ -7,20 +7,22 @@
     position: relative;
     border-radius: 20px;
 }
-.hero-orvelay{
+.hero-overlay {
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 0 6rem;
-   
+    padding-right:  6rem;
 }
-.hero-content{
-    color: #ffffffff;
+
+
+.hero-content {
     max-width: 360px;
+    color: #ffffff;
     text-align: center;
 }
+
 
 .hero-buttons{
     display: flex;
@@ -31,6 +33,7 @@
     font-size: 1.87rem;
     margin-bottom: 40px;    
     font-weight: 400;
+    line-height: 36px;
      letter-spacing: 3px;
 
 }
@@ -48,7 +51,8 @@
 }
 
 .hero-orvelay{
-    padding: 0;   
+    padding: 0 6rem;   
+
 }
 
 
@@ -62,10 +66,11 @@
 
 .hero-content{
     max-width: 330px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 
 }
 
 .btn{
     font-size: 1.2rem;
 }
+
