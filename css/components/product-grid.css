@@ -10,41 +10,47 @@
 }
 
 .highlight {
-	grid-area: highlight;
-	background-image: url(../../images/products/card_imagem.jpg);
-}
-.sneaker-purple {
-	grid-area: sneaker-purple;
-	background-image: url(../../images/products/roxo-verde-grid.jpg);
-}
-.model {
-	grid-area: model;
-	background-image: url(../../images/products/modelo-feminino.jpg);
-}
-.sneaker-color {
-	grid-area: sneaker-color;
-	background-image: url(../../images/products/futurista-grid.jpg);
-}
-.sneaker-white {
-	grid-area: sneaker-white;
-	background-image: url(../../images/products/preto-branco-grid.jpg);
-}
-.sneaker-silver {
-	grid-area: sneaker-silver;
-	background-image: url(../../images/products/moderno-grid.jpg);
-}
-.grid-section {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(3, 300px);
-	grid-template-areas:
-		"highlight highlight sneaker-purple sneaker-purple"
-		"highlight highlight model sneaker-color"
-		"sneaker-white sneaker-white model sneaker-silver";
-	gap: 30px;
+    grid-area: highlight;
+    background-image: url(../../images/products/card_imagem.jpg);
 }
 
-.top1-content{
+.sneaker-purple {
+    grid-area: sneaker-purple;
+    background-image: url(../../images/products/roxo-verde-grid.jpg);
+}
+
+.model {
+    grid-area: model;
+    background-image: url(../../images/products/modelo-feminino.jpg);
+}
+
+.sneaker-color {
+    grid-area: sneaker-color;
+    background-image: url(../../images/products/futurista-grid.jpg);
+}
+
+.sneaker-white {
+    grid-area: sneaker-white;
+    background-image: url(../../images/products/preto-branco-grid.jpg);
+}
+
+.sneaker-silver {
+    grid-area: sneaker-silver;
+    background-image: url(../../images/products/moderno-grid.jpg);
+}
+
+.grid-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+        "highlight highlight sneaker-purple sneaker-purple"
+        "highlight highlight model sneaker-color"
+        "sneaker-white sneaker-white model sneaker-silver";
+    gap: 30px;
+}
+
+.top1-content {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -52,22 +58,50 @@
     text-align: center;
 }
 
-.card-title{
+.card-title {
     color: #EDEDED;
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.card-subtitle{
+.card-subtitle {
     color: #EDEDED;
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.cta-group{
+.cta-group {
     display: flex;
     gap: 10px;
 }
 
+@media (max-width: 768px) {
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneacker-color"
+            "model sneacker-silver"
+            "sneaker-purple sneaker-purple";
+            width: 100%;
+            gap: 0.625rem;
+            
+}
+ .highlight{
+    min-height: 500px;
+ }
+
+.model{
+    min-height: 370px;
+}
+
+.sneaker-white, .sneaker-purple{
+    min-height: 190px;
+
+}
+
+ }
